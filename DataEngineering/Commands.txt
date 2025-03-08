@@ -1,0 +1,18 @@
+git push --force origin main #2
+git push origin master
+git push origin main #1 
+git remote add origin https://github.com/Gagan-KM/Daily_Code_Bytes.git
+git commit -m "Added CLFP01301 Jupyter Notebook"
+git add CLFP01301.ipynb
+git init
+git checkout main
+git push origin my-private-branch #1
+git checkout -b my-private-branch #2
+git switch main
+git push origin main  # Change 'main' to the branch you're working on if needed
+git add .
+git commit -m "Moved all Jupyter notebooks to FEB_2025 folder"
+mv *.ipynb FEB_2025/
+mkdir FEB_2025
+mkdir MAR_2025 && mv *.ipynb MAR_2025/ && git add . && git commit -m "Moved all Jupyter notebooks to MAR_2025 folder" && git push origin main
+    
